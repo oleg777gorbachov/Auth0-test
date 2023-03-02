@@ -1,0 +1,29 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-items {
+  display: flex;
+  transition: all 0.3s;
+}
+
+.slider-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}

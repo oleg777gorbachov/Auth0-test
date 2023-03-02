@@ -1,0 +1,38 @@
+.basket:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.basket {
+  position: absolute;
+  top: 2rem;
+  left: -16rem;
+  z-index: 2;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 2%;
+  opacity: 0;
+  visibility: hidden;
+  width: 300px;
+  transition: all 0.3s;
+  border: 1px solid grey;
+}
+
+.basket-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basket-products {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.basket-total {
+  display: flex;
+  gap: 0.5rem;
+}

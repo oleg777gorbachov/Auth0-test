@@ -1,0 +1,10 @@
+.product-sm {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.product-sm img {
+  width: 60px;
+}

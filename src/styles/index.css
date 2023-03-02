@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: chocolate;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid coral;
+  padding: 0.5rem 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.remove {
+  background-color: coral;
+}
+
+.login {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.login:hover {
+  color: chocolate;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 64px;
+  border-radius: 2%;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter {
+  cursor: pointer;
+}
+
+.filter.selected {
+  text-decoration: underline;
+  color: coral;
+}
+
+.filter:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.product-image {
+  max-width: 180px;
+  min-width: 120px;
+  width: 100%;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.price {
+  color: green;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid coral;
+  flex-basis: calc(33% - 2rem);
+}
+
+.products {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.buy {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.profile {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.profile h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 986px) {
+  .product {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    flex-basis: 100%;
+  }
+}
